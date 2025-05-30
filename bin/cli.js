@@ -10,13 +10,13 @@ import chalk from "chalk";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const FRAMEWORKS = ["vue3", "nuxt3", "react19", "nextjs14"];
+const FRAMEWORKS = ["vue3", "nuxt3", "react18", "nextjs15"];
 
 const STATE_MANAGERS = {
   vue3: ["pinia@^2.1.6", "vuex@^4.1.0"],
   nuxt3: ["pinia@^2.1.6", "vuex@^4.1.0"],
-  react19: ["@reduxjs/toolkit@^2.1.1", "redux@^5.0.1", "mobx@^6.11.0"],
-  nextjs14: ["@reduxjs/toolkit@^2.1.1", "redux@^5.0.1", "mobx@^6.11.0"],
+  react18: ["@reduxjs/toolkit@^2.1.1", "redux@^5.0.1", "mobx@^6.11.0"],
+  nextjs15: ["@reduxjs/toolkit@^2.1.1", "redux@^5.0.1", "mobx@^6.11.0"],
 };
 
 const UI_LIBS = {
@@ -29,8 +29,8 @@ const UI_LIBS = {
 const TEST_TOOLS = {
   vue3: ["jest", "@testing-library/vue"],
   nuxt3: ["jest", "@testing-library/vue"],
-  react19: ["jest", "@testing-library/react"],
-  nextjs14: ["jest", "@testing-library/react"],
+  react18: ["jest", "@testing-library/react"],
+  nextjs15: ["jest", "@testing-library/react"],
 };
 
 async function run() {
