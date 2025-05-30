@@ -10,17 +10,17 @@
 Запустить CLI можно напрямую из GitHub:
 
 ```bash
-npx github:yourusername/create-template-app
+npx github:massume/afterlogic-template-app
 ```
 
 Или локально:
 
 ```bash
-git clone https://github.com/yourusername/create-template-app
-cd create-template-app
+git clone https://github.com/massume/afterlogic-template-app
+cd afterlogic-template-app
 npm install
 npm link
-create-template-app
+afterlogic-template-app
 ```
 
 ---
@@ -128,7 +128,7 @@ create-template-app
 ## 🔍 Пример запуска
 
 ```bash
-npx github:yourusername/create-template-app
+npx github:massume/afterlogic-template-app
 ```
 
 ```text
