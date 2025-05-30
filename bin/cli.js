@@ -135,11 +135,13 @@ async function run() {
       "install",
       "-D",
       "eslint@^8.57.0",
-      "eslint-config-airbnb-extended@^2.0.0",
+      "eslint-config-airbnb@^19.0.4",
+      "eslint-config-airbnb-typescript@^17.1.0",
       "eslint-plugin-import@^2.29.1",
       "eslint-plugin-react@^7.34.1",
       "eslint-plugin-react-hooks@^4.6.0",
-      "eslint-plugin-jsx-a11y@^6.8.0"
+      "eslint-plugin-jsx-a11y@^6.8.0",
+      "typescript"
     ]);
     await fs.writeFile(
       ".eslintrc.json",
