@@ -31,8 +31,8 @@ afterlogic-template-app
 |----------|--------|----------------------------|
 | Vue      | 3.x    | Vite + TypeScript          |
 | Nuxt     | 3.x    | Nuxt 3 + TypeScript        |
-| React    | 19.x   | Vite + TypeScript          |
-| Next.js  | 14.x   | App Router + TypeScript    |
+| React    | 18.x   | Vite + TypeScript          |
+| Next.js  | 15.x   | App Router + TypeScript    |
 
 ---
 
@@ -43,8 +43,8 @@ afterlogic-template-app
 ### ✅ Фреймворк
 - `vue3`
 - `nuxt3`
-- `react19`
-- `nextjs14`
+- `react18`
+- `nextjs15`
 
 ---
 
@@ -132,7 +132,7 @@ npx github:massume/afterlogic-template-app
 ```
 
 ```text
-? Выберите фреймворк: › react19
+? Выберите фреймворк: › react18
 ? Выберите способ стилизации: › styled-components
 ? Выберите state-менеджер: › redux
 ? Выберите UI-библиотеку: › tailwind
