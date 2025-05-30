@@ -85,11 +85,28 @@ async function run() {
     choices: ["sanity", "sonar"],
   });
 
-  const projectDir = process.cwd();
+  
+  const { projectName } = await inquirer.prompt({
+    type: "input",
+    name: "projectName",
+    message: "Введите имя проекта (будет создана папка):",
+    validate: input => input ? true : "Имя проекта не может быть пустым"
+  });
+
+  const projectDir = path.resolve(process.cwd(), projectName);
   const templateDir = path.resolve(__dirname, "../templates", framework);
+
 
   console.log(chalk.green(`📁 Копируем шаблон: ${framework}`));
   await fs.copy(templateDir, projectDir);
+  // Обновление имени в package.json
+  const pkgPath = path.join(projectDir, "package.json");
+  if (await fs.pathExists(pkgPath)) {
+    const pkg = await fs.readJson(pkgPath);
+    pkg.name = projectName;
+    await fs.writeJson(pkgPath, pkg, { spaces: 2 });
+  }
+
 
   process.chdir(projectDir);
 
