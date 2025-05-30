@@ -184,7 +184,7 @@ async function run() {
 
   if (testTools.includes("@testing-library/vue")) {
     console.log(chalk.magenta("🧪 Установка Vue Testing Library"));
-    await execa("npm", ["install", "-D", "@testing-library/vue@^7.2.0"]);
+    await execa("npm", ["install", "-D", "@testing-library/vue@^8.1.0"]);
   }
 
   if (tools.includes("sanity")) {
