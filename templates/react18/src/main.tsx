@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom/client'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <h1>Hello React 19</h1>
+    <h1>Hello React 18</h1>
   </React.StrictMode>
 )

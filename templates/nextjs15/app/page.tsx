@@ -1,3 +1,3 @@
 export default function Page() {
-  return <h1>Hello Next.js 14</h1>
+  return <h1>Hello Next.js 15</h1>
 }
