@@ -160,16 +160,11 @@ async function run() {
       "eslint-plugin-jsx-a11y@^6.8.0",
       "typescript"
     ]);
-    await fs.writeFile(
-      ".eslintrc.json",
-      JSON.stringify({ extends: ["airbnb-extended"] }, null, 2)
-    );
   }
 
   if (usePrettier) {
     console.log(chalk.yellow("🧹 Установка Prettier"));
     await execa("npm", ["install", "-D", "prettier@^3.2.5"]);
-    await fs.writeFile(".prettierrc", JSON.stringify({ semi: true, singleQuote: true }, null, 2));
   }
 
   if (testTools.includes("jest")) {
